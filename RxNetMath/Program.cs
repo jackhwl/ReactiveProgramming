@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Reactive;
 using System.Reactive.Linq;
 using System.Threading;
 
@@ -16,7 +17,13 @@ namespace RxNetMath
 			Console.WriteLine($"Program started on main thread with Id {threadId}...");
 
 			var observable = Observable.Range(5,8);
-			var subscription = observable.Subscribe(new Observer());
+
+			IObserver<int> observer = Observer.Create<int>(
+				Console.WriteLine,
+				(error) => { Console.WriteLine($"Error: {error.Message}"); },
+				() => { Console.WriteLine("Observation complete"); }
+			);
+			var subscription = observable.Subscribe(observer);
 
 			Console.ReadKey();
 

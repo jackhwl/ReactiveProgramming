@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace RxNetMath
 {
-	class Observer : IObserver<int>
+	class Observer0 : IObserver<int>
 	{
 		public void OnNext(int value)
 		{
