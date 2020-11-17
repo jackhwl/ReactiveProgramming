@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Reactive;
+using System.Reactive.Concurrency;
 using System.Reactive.Linq;
 using System.Reactive.Subjects;
 using System.Threading;
@@ -13,6 +14,13 @@ namespace RxNetMath
 			// https://www.dofactory.com/net/observer-design-pattern
 			// https://www.youtube.com/watch?v=kgpUrk1t5xM&list=PLHfwoPeLRqw7XOffuusep6CJRo6Yh6IYq&index=3
 			// https://sachabarbs.wordpress.com/2016/12/23/rx-over-the-wire/
+			// http://introtorx.com/Content/v1.0.10621.0/15_SchedulingAndThreading.html
+
+
+			_symplicityService.ObserveImport()
+	.SubscribeOn(Scheduler.Default)
+	.ObserveOn(CurrentThreadScheduler.Instance) //
+	.Subscribe(ShowProgress, ShowComplete);
 
 			var mgr = new ReactiveSocialNetworksManager();
 			IDisposable subscription = mgr.ObserveMessages("Rx")
