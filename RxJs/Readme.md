@@ -1,0 +1,1 @@
+* Promise.then return a Promise, Observable.subscribe return a subscription
