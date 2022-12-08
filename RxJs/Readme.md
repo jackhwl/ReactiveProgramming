@@ -6,3 +6,4 @@
 * *  Promise fire right away, observable fire only after subscribe
 * Observable is Cancelable
 * Multicasting, hot vs cold
+* chaining
