@@ -9,6 +9,7 @@ const p = new Promise((resolve, reject) => {
 const o = new Observable((observer) => {
     observer.next("This is an Observable")
     observer.error("This is an error")
+    observer.complete();
 })
 
 const p2 = p.then((res) => {
