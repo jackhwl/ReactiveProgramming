@@ -5,3 +5,4 @@
 * * Promise is imperative, observable is declarative
 * *  Promise fire right away, observable fire only after subscribe
 * Observable is Cancelable
+* Multicasting, hot vs cold
