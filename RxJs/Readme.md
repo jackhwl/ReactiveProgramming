@@ -7,3 +7,6 @@
 * Observable is Cancelable
 * Multicasting, hot vs cold
 * chaining
+* Complete vs InComplete
+## Thinking reactively
+* slider project
