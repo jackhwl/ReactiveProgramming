@@ -10,3 +10,4 @@
 * Complete vs InComplete
 ## Thinking reactively
 * slider project
+* slider prpject angular version
