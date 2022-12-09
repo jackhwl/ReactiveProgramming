@@ -11,3 +11,4 @@
 ## Thinking reactively
 * slider project
 * slider prpject angular version
+* slider with area
