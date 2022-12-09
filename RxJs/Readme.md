@@ -12,3 +12,4 @@
 * slider project
 * slider prpject angular version
 * slider with area
+* slider area angular version

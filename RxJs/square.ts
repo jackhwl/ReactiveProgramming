@@ -19,11 +19,13 @@ const h$ = fromEvent(h, 'input').pipe(map(e => e.target.value), startWith(h.valu
 const wh$ = combineLatest([w$, h$])
 const area$ = wh$.pipe(map(([w,h]) => w*h ))
 
-w$.subscribe(val => wval.innerText = val)
-h$.subscribe(val => hval.innerText = val)
+// w$.subscribe(val => wval.innerText = val)
+// h$.subscribe(val => hval.innerText = val)
 area$.subscribe(val => area.value = val)
 
 wh$.subscribe(([w, h]) => {
+  wval.innerText = w;
+  hval.innerText = h;
   polygon.style.width = `${w}px`;
   polygon.style.height = `${h}px`;
 })
