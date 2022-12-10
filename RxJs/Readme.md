@@ -13,3 +13,11 @@
 * slider prpject angular version
 * slider with area
 * slider area angular version
+## operators
+* interval, async
+* range, sync
+* of
+* from 
+* fromEvent
+* pluck
+* toPromise() 
