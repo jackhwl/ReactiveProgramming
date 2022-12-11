@@ -28,3 +28,4 @@
 * filter
 * scan vs Array.reduce
 * 20 must knows operators
+* [20 RXJS Operators in 20 minutes | Mike Brocchi & John Niedzwiecki](https://www.youtube.com/watch?v=ak3MvMn8u18)
