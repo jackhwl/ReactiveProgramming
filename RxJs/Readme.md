@@ -21,3 +21,7 @@
 * fromEvent
 * pluck
 * toPromise() 
+## Day 2
+* create function
+* operators
+* map, mapTo('42')
