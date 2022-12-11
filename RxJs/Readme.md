@@ -25,3 +25,6 @@
 * create function
 * operators
 * map, mapTo('42')
+* filter
+* scan vs Array.reduce
+* 20 must knows operators
