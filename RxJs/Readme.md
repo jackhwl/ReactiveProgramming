@@ -36,3 +36,10 @@
 * mergeMap
 * switchMap
 * concatMap
+* type ahead
+'''
+typing$.pipe(
+    switchMap(text => getApiData(text))
+)
+'''
+switchMap cancel previous one when new one comes
