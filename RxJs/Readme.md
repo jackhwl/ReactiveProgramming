@@ -43,3 +43,4 @@ typing$.pipe(
 )
 '''
 switchMap cancel previous one when new one comes
+* Subject, BehaviorSubject, ReplaySubject
