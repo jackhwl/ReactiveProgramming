@@ -44,3 +44,6 @@ typing$.pipe(
 '''
 switchMap cancel previous one when new one comes
 * Subject, BehaviorSubject, ReplaySubject
+### part 4
+* Testing, marble diagram
+* map, combineLatest, switchMap
