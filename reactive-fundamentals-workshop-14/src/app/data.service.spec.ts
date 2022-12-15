@@ -27,5 +27,13 @@ fdescribe('DataService', () => {
       const expected = cold('a|', { a: mockPeople })
       expect(actual).toBeObservable(expected)
     })
+
+    it('should return an empty array when the http call fails', () => {
+      const httpCall = cold('#')
+      mockHttp.get.and.returnValue(httpCall)
+      const actual = dataService.getPeople()
+      const expected = cold('(a|)', { a: [] })
+      expect(actual).toBeObservable(expected)
+    })
   });
 });

@@ -47,3 +47,5 @@ switchMap cancel previous one when new one comes
 ### part 4
 * Testing, marble diagram
 * map, combineLatest, switchMap
+* testing
+* cold: by natural observable is lazy only emit value after subscribe
